@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/toolbar_layout"
+            android:id="@+id/app_bar"></include>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rimage"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/rname"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingridients"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="left" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/ring"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Procedure"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="left" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procedure"
+        android:textSize="13sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/rproc"
+        android:layout_gravity="center_horizontal"  />
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>

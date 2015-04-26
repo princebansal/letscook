@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartScreenActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="120dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's"
+            android:id="@+id/isoi"
+            android:textSize="50sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cook"
+            android:id="@+id/vit"
+            android:textSize="50sp"
+            android:textColor="#007700"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Food Our Recipe"
+        android:id="@+id/isoiabb"
+        android:textSize="15sp"
+        android:layout_marginTop="-10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/userfield"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/pasfield"
+        android:password="true"
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/signinbut"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register"
+        android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter as a guest"
+        android:textSize="18sp"
+        android:id="@+id/guesttext"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#00CCFF"/>
+
+</LinearLayout>
+
+    </FrameLayout>
