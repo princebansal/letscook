@@ -161,10 +161,18 @@ public class MainActivity extends ActionBarActivity implements MaterialTabListen
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.smallmenu, menu);
+        getMenuInflater().inflate(R.menu.smallmenu1, menu);
         String s=pref.getString("type","guest");
         if(s.equals("guest"))
-            menu.getItem(0).setTitle("Login");
+            menu.getItem(1).setTitle("Login");
+        if(s.equals("ziyad")){
+            menu.getItem(0).setVisible(true);
+        }
+        else
+        {
+            menu.getItem(0
+            ).setVisible(false);
+        }
         return true;
     }
 
@@ -177,6 +185,10 @@ public class MainActivity extends ActionBarActivity implements MaterialTabListen
         if (id == R.id.sm_action_logout) {
             updatepref("guest");
             tostart(this);
+            return true;
+        }
+        if (id == R.id.settings) {
+            startActivity(new Intent(this,ManageActivity.class));
             return true;
         }
 
